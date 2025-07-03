@@ -75,13 +75,15 @@
             // 
             BackColor = Color.FromArgb(255, 192, 192);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(420, 120);
+            ClientSize = new Size(736, 308);
             Controls.Add(textBox1);
             Controls.Add(comboBoxOperator);
             Controls.Add(textBox2);
             Controls.Add(buttonCalculate);
             Controls.Add(labelResult);
             HelpButton = true;
+            MaximumSize = new Size(811, 411);
+            MinimumSize = new Size(184, 92);
             Name = "Form1";
             Text = "GUI Calculator";
             ResumeLayout(false);
