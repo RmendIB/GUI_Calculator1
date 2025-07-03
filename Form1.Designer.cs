@@ -72,7 +72,7 @@
             // 
             // Form1
             // 
-            ClientSize = new Size(420, 120);
+            ClientSize = new Size(820, 220);
             Controls.Add(textBox1);
             Controls.Add(comboBoxOperator);
             Controls.Add(textBox2);
