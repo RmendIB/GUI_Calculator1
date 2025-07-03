@@ -22,60 +22,66 @@
 
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBoxOperator = new System.Windows.Forms.ComboBox();
-            this.buttonCalculate = new System.Windows.Forms.Button();
-            this.labelResult = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            comboBoxOperator = new ComboBox();
+            buttonCalculate = new Button();
+            labelResult = new Label();
+            SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(30, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            // 
-            // comboBoxOperator
-            // 
-            this.comboBoxOperator.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxOperator.Location = new System.Drawing.Point(140, 30);
-            this.comboBoxOperator.Name = "comboBoxOperator";
-            this.comboBoxOperator.Size = new System.Drawing.Size(50, 23);
+            textBox1.Location = new Point(30, 30);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(200, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            textBox2.Location = new Point(200, 30);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 2;
+            // 
+            // comboBoxOperator
+            // 
+            comboBoxOperator.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxOperator.Location = new Point(140, 30);
+            comboBoxOperator.Name = "comboBoxOperator";
+            comboBoxOperator.Size = new Size(50, 23);
+            comboBoxOperator.TabIndex = 1;
             // 
             // buttonCalculate
             // 
-            this.buttonCalculate.Location = new System.Drawing.Point(310, 30);
-            this.buttonCalculate.Name = "buttonCalculate";
-            this.buttonCalculate.Size = new System.Drawing.Size(75, 23);
-            this.buttonCalculate.Text = "Calculate";
-            this.buttonCalculate.UseVisualStyleBackColor = true;
-            this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
+            buttonCalculate.BackColor = Color.Red;
+            buttonCalculate.Location = new Point(310, 30);
+            buttonCalculate.Name = "buttonCalculate";
+            buttonCalculate.Size = new Size(75, 23);
+            buttonCalculate.TabIndex = 3;
+            buttonCalculate.Text = "Calculate";
+            buttonCalculate.UseVisualStyleBackColor = false;
+            buttonCalculate.Click += buttonCalculate_Click;
             // 
             // labelResult
             // 
-            this.labelResult.Location = new System.Drawing.Point(30, 70);
-            this.labelResult.Name = "labelResult";
-            this.labelResult.Size = new System.Drawing.Size(355, 23);
-            this.labelResult.Text = "Result:";
+            labelResult.Location = new Point(30, 70);
+            labelResult.Name = "labelResult";
+            labelResult.Size = new Size(355, 23);
+            labelResult.TabIndex = 4;
+            labelResult.Text = "Result:";
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(420, 120);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBoxOperator);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.buttonCalculate);
-            this.Controls.Add(this.labelResult);
-            this.Name = "Form1";
-            this.Text = "GUI Calculator";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            ClientSize = new Size(420, 120);
+            Controls.Add(textBox1);
+            Controls.Add(comboBoxOperator);
+            Controls.Add(textBox2);
+            Controls.Add(buttonCalculate);
+            Controls.Add(labelResult);
+            Name = "Form1";
+            Text = "GUI Calculator";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
