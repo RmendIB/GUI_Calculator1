@@ -58,7 +58,7 @@
             buttonCalculate.Name = "buttonCalculate";
             buttonCalculate.Size = new Size(75, 23);
             buttonCalculate.TabIndex = 3;
-            buttonCalculate.Text = "Calculate";
+            buttonCalculate.Text = "Kalkulo";
             buttonCalculate.UseVisualStyleBackColor = false;
             buttonCalculate.Click += buttonCalculate_Click;
             // 
@@ -68,7 +68,7 @@
             labelResult.Name = "labelResult";
             labelResult.Size = new Size(355, 23);
             labelResult.TabIndex = 4;
-            labelResult.Text = "Result:";
+            labelResult.Text = "Rezultati:";
             // 
             // Form1
             // 
