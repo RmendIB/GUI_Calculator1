@@ -72,6 +72,7 @@
             // 
             // Form1
             // 
+            BackColor = Color.FromArgb(255, 192, 192);
             ClientSize = new Size(420, 120);
             Controls.Add(textBox1);
             Controls.Add(comboBoxOperator);
