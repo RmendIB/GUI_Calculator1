@@ -81,6 +81,7 @@
             Controls.Add(textBox2);
             Controls.Add(buttonCalculate);
             Controls.Add(labelResult);
+            HelpButton = true;
             Name = "Form1";
             Text = "GUI Calculator";
             ResumeLayout(false);
