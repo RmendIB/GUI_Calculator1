@@ -32,14 +32,14 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(30, 30);
+            textBox1.Location = new Point(72, 20);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(200, 30);
+            textBox2.Location = new Point(242, 20);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 2;
@@ -47,7 +47,7 @@
             // comboBoxOperator
             // 
             comboBoxOperator.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxOperator.Location = new Point(140, 30);
+            comboBoxOperator.Location = new Point(182, 20);
             comboBoxOperator.Name = "comboBoxOperator";
             comboBoxOperator.Size = new Size(50, 23);
             comboBoxOperator.TabIndex = 1;
@@ -55,7 +55,7 @@
             // buttonCalculate
             // 
             buttonCalculate.BackColor = Color.Red;
-            buttonCalculate.Location = new Point(310, 30);
+            buttonCalculate.Location = new Point(173, 149);
             buttonCalculate.Name = "buttonCalculate";
             buttonCalculate.Size = new Size(75, 23);
             buttonCalculate.TabIndex = 3;
@@ -74,12 +74,14 @@
             // Form1
             // 
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(420, 336);
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(420, 238);
             Controls.Add(textBox1);
             Controls.Add(comboBoxOperator);
             Controls.Add(textBox2);
             Controls.Add(buttonCalculate);
             Controls.Add(labelResult);
+            DoubleBuffered = true;
             HelpButton = true;
             MaximumSize = new Size(811, 411);
             MinimumSize = new Size(184, 92);
