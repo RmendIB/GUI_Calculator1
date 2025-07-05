@@ -55,7 +55,7 @@
             // buttonCalculate
             // 
             buttonCalculate.BackColor = Color.Red;
-            buttonCalculate.Location = new Point(173, 149);
+            buttonCalculate.Location = new Point(157, 96);
             buttonCalculate.Name = "buttonCalculate";
             buttonCalculate.Size = new Size(75, 23);
             buttonCalculate.TabIndex = 3;
