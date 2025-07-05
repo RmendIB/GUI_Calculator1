@@ -22,6 +22,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             comboBoxOperator = new ComboBox();
@@ -72,7 +73,8 @@
             // 
             // Form1
             // 
-            ClientSize = new Size(420, 120);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(420, 336);
             Controls.Add(textBox1);
             Controls.Add(comboBoxOperator);
             Controls.Add(textBox2);
